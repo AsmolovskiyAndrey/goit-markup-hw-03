@@ -37,6 +37,9 @@ body{
 .invisible{
     display: none;
 }
+h1,h2,h3,p,ul{
+    margin: 0;
+}
 /* logo */
 .logo{
     font-family: 'Raleway', sans-serif;
