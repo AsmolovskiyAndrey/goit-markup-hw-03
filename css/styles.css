@@ -40,6 +40,15 @@ body{
 h1,h2,h3,p,ul{
     margin: 0;
 }
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* logo */
 .logo{
     font-family: 'Raleway', sans-serif;
