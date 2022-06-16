@@ -24,6 +24,7 @@ body{
     --adress-capacity: rgba(255, 255, 255, 0.6);
     --dark-bgc:#2F303A;
     --light-bgc: #F5F4FA;
+    --border-portfolio:#EEEEEE;
 }
 /* Убрал точки со списков ul */
 .list{
@@ -55,7 +56,7 @@ h1,h2,h3,p,ul{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 /* header-flex для всего хедера */
 .header-flex{
@@ -66,7 +67,7 @@ h1,h2,h3,p,ul{
     align-items: center;
 }
 /* logo */
-.logo.link{
+.header .logo.link{
     margin-right: 93px;
 }
 .logo{
@@ -142,10 +143,15 @@ h1,h2,h3,p,ul{
 
 /* hero index*/
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--dark-bgc);
     text-align: center;
 }
 .hero-title{
+    margin-left: 237px;
+    margin-right: 237px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -214,6 +220,19 @@ h1,h2,h3,p,ul{
     padding-top: 0;
 }
 /* team index */
+.team.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-li{
+    text-align: center;
+    background: var(--text-bgc-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-li:not(:last-child){
+    margin-right: 30px;
+}
 .team.section .list{
     display: flex;
 }
@@ -221,12 +240,16 @@ h1,h2,h3,p,ul{
     background-color: var(--light-bgc);
 }
 .team-name{
+    margin-bottom: 10px;
+    margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     color: var(--title-main-color);
 }
 .team-prof{
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -270,9 +293,15 @@ h1,h2,h3,p,ul{
     background-color: var(--text-secondary-color);
 }
 /* projects portfolio */
+.projects.list{
+    margin-bottom: 94px;
+}
 .projects-li{
     margin-right: 30px;
     margin-bottom: 30px;
+
+    background: var(--text-bgc-color);
+    border-bottom: 1px solid var(--border-portfolio);
 }
 .projects-li:nth-child(3n) {
     margin-right: 0;
@@ -308,8 +337,14 @@ h1,h2,h3,p,ul{
     color: var(--text-bgc-color);
 }
 .footer-link{
+    display: block;
+    margin-top: 9px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--adress-capacity)
+}
+.footer .logo.link{
+    display: block;
+    margin-bottom: 20px;
 }
