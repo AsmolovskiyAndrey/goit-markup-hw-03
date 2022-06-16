@@ -28,6 +28,7 @@ body{
 /* Убрал точки со списков ul */
 .list{
     list-style: none;
+    padding: 0;
 }
 /* Убрал подчёркивание со ссылок */
 .link{
@@ -44,10 +45,8 @@ h1,h2,h3,p,ul{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-}
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
 }
 /* logo */
 .logo{
@@ -95,6 +94,7 @@ h1,h2,h3,p,ul{
 /* hero index*/
 .hero{
     background-color: var(--dark-bgc);
+    text-align: center;
 }
 .hero-title{
     font-weight: 900;
@@ -103,7 +103,7 @@ h1,h2,h3,p,ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-bgc-color);
-    text-align: center;  
+    margin-bottom: 30px;
 }
 .hero-button{
     font-family: inherit;
@@ -114,40 +114,57 @@ h1,h2,h3,p,ul{
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    border: transparent;
+    text-align: center;
+    padding: 10px 32px;
 }
 .hero-button:hover{
     background-color: var(--bgc-button-color);
 }
 
 /* benefits index*/
- .benefits-title{
+.benefits-title{
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     color: var(--title-main-color);
- }
- .benefits-text{
+}
+.benefits-text{
     line-height: 1.7;     
- }
- /* working index*/
- .working-title,
- .team-title {
+}
+
+/* Установка отступов для секций Padding */
+.section{
+    padding: 94px 15px;
+}
+
+/* working index*/
+.working-title,
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     color: var(--title-main-color);
     text-align: center;
- }
- /* team index*/
- .team{
-    background-color: var(--light-firstly-bgc);
- }
- .team-name{
+    margin-bottom: 50px;
+}
+.working.section{
+    padding-top: 0;
+} */
+/* team index */
+.team{
+    background-color: var(--light-bgc);
+}
+.team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     color: var(--title-main-color);
- }
+}
 .team-prof{
     font-size: 16px;
     line-height: 1.19;
@@ -161,6 +178,12 @@ h1,h2,h3,p,ul{
     color: var(--title-main-color);
     background-color: var(--light-bgc);
     cursor: pointer;
+    border-radius: 4px;
+    border: transparent;
+    display: inline-block;
+    min-height: 38px;
+    text-align: center;
+    padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus{
@@ -184,17 +207,21 @@ h1,h2,h3,p,ul{
     line-height: 1.89;
     color: var(--text-firstly-color);
 }
+.cont-team{
+
+}
  /* FOOTER */
- .footer{
-     background-color: var(--dark-bgc);
- }
-  .footer-address {
-      line-height: 1.7;
-      color: var(--text-bgc-color);
-  }
- .footer-link{
+.footer{
+    background-color: var(--dark-bgc);
+    padding: 60px 15px;
+}
+.footer-address {
+    line-height: 1.7;
+    color: var(--text-bgc-color);
+}
+.footer-link{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--adress-capacity)
- }
+}
