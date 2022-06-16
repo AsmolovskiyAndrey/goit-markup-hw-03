@@ -56,7 +56,7 @@ h1,h2,h3,p,ul{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 /* header-flex для всего хедера */
 .header-flex{
@@ -151,7 +151,7 @@ h1,h2,h3,p,ul{
 .hero-title{
     margin-left: 237px;
     margin-right: 237px;
-    
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -299,6 +299,7 @@ h1,h2,h3,p,ul{
 .projects-li{
     margin-right: 30px;
     margin-bottom: 30px;
+    width: calc((100% - 60px) / 3);
 
     background: var(--text-bgc-color);
     border-bottom: 1px solid var(--border-portfolio);
