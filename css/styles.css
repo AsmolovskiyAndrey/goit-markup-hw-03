@@ -26,6 +26,8 @@ body{
     --light-bgc: #F5F4FA;
     --border-portfolio:#EEEEEE;
     --border-header: #ECECEC;
+
+    --item: 3;
 }
 /* Убрал точки со списков ul */
 .list{
@@ -213,11 +215,8 @@ h1,h2,h3,p,ul{
     padding: 94px 15px;
 }
 /* working index*/
-.working-li{
+.working-li:not(:last-child){
     margin-right: 30px;
-}
-.working-li:last-child{
-    margin-right: 0;
 }
 .working .list {
     display: flex;
@@ -243,14 +242,15 @@ h1,h2,h3,p,ul{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.team-ul {
+    margin: -15px;
+}
 .team-li{
+    margin: 15px;
     text-align: center;
     background: var(--text-bgc-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-.team-li:not(:last-child){
-    margin-right: 30px;
 }
 .team.section .list{
     display: flex;
@@ -313,18 +313,14 @@ h1,h2,h3,p,ul{
     background-color: var(--text-secondary-color);
 }
 /* projects portfolio */
+.projects.list{
+    margin: -15px;
+}
 .projects-li{
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: calc((100% - 60px) / 3);
+    margin: 15px;
+    width: calc((100% - 90px) / var(--item));
 
     background: var(--text-bgc-color);
-}
-.projects-li:nth-child(3n) {
-    margin-right: 0;
-}
-.projects-li:nth-last-child(-n+3) {
-    margin-bottom: 0;
 }
 .projects-cont{
     padding: 20px 24px;
