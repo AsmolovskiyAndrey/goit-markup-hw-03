@@ -36,6 +36,11 @@ body{
 .link{
     text-decoration: none;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /* невидимые заголовки */
 .visually-hidden {
     position: absolute;
@@ -314,7 +319,6 @@ h1,h2,h3,p,ul{
     width: calc((100% - 60px) / 3);
 
     background: var(--text-bgc-color);
-    border: 1px solid var(--border-portfolio);
 }
 .projects-li:nth-child(3n) {
     margin-right: 0;
@@ -324,6 +328,8 @@ h1,h2,h3,p,ul{
 }
 .projects-cont{
     padding: 20px 24px;
+    border: 1px solid var(--border-portfolio);
+    border-top: none;
 }
 .projects-title{
     margin-bottom: 4px;
